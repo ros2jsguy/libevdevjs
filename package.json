@@ -1,0 +1,48 @@
+{
+  "name": "libevdevjs",
+  "version": "0.0.1",
+  "description": "Interact with linux input devices (e.g., game controller, touchpad, keyboard) via libevdev",
+  "main": "dist/lib/index.js",
+  "bin": {
+    "generate-input-codes": "dist/tools/generate-input-codes.js"
+  },
+  "types": "dist/lib/index.d.ts",
+  "keywords": [
+    "libevdev",
+    "evdev",
+    "joystick",
+    "game controller",
+    "raspberry pi",
+    "typescript"
+  ],
+  "scripts": {
+    "install": "npm run build:lib",
+    "build:lib": "node-gyp rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ros2jsguy <ros2jsguy@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ros2jsguy/libevdevjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ros2jsguy/libevdevjs/issues"
+  },
+  "homepage": "https://github.com/ros2jsguy/libevdevjs#readme",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "clang-format": "^1.5.0",
+    "node-addon-api": "^3.1.0",
+    "node-gyp": "^8.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "@types/node": "^15.3.0",
+    "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "gypfile": true
+}

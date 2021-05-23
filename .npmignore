@@ -1,0 +1,6 @@
+src/
+.git*
+.eslint*
+.vscode/
+.project
+.editorconfig
